@@ -30,10 +30,10 @@
 		"n8nNodesApiVersion": 1,
 		"strict": true,
 		"credentials": [
-			"dist/credentials/qui.credentials.js"
+			"dist/credentials/QuiApi.credentials.js"
 		],
 		"nodes": [
-			"dist/nodes/qui/qui.node.js"
+			"dist/nodes/Qui/Qui.node.js"
 		]
 	},
 	"devDependencies": {
