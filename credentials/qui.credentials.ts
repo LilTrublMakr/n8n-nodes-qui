@@ -1,5 +1,6 @@
 import type {
 	IAuthenticateGeneric,
+	Icon,
 	ICredentialTestRequest,
 	ICredentialType,
 	INodeProperties,
@@ -7,9 +8,8 @@ import type {
 
 export class QuiApi implements ICredentialType {
 	name = 'quiApi';
-
 	displayName = 'QUI API';
-
+	icon: Icon = "file:../icons/qui_icon.svg";
 	documentationUrl = 'https://github.com/autobrr/qui';
 
 	properties: INodeProperties[] = [
