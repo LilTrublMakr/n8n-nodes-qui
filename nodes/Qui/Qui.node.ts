@@ -7011,6 +7011,3 @@ export class Qui implements INodeType {
 		return [returnData];
 	}
 }
-
-// n8n derives the export name from the filename (qui.node.js → 'qui')
-export { Qui as qui };
