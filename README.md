@@ -192,5 +192,11 @@ Tested against n8n version **2.8+**. It should be compatible with **1.x** as wel
 ## Resources
 
 - [n8n community nodes documentation](https://docs.n8n.io/integrations/#community-nodes)
+- [QUI Website](https://getqui.com/)
 - [QUI GitHub repository](https://github.com/autobrr/qui)
 - [n8n-nodes-qui GitHub repository](https://github.com/LilTrublMakr/n8n-nodes-qui)
+
+## Credits
+
+- Thanks to Soup and Ze0s for the incredible work they have put in to QUI.
+  - [QUI Dev Donation Methods](https://github.com/autobrr/qui/blob/develop/README.md#donation-methods)
