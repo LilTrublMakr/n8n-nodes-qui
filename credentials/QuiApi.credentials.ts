@@ -19,7 +19,7 @@ export class QuiApi implements ICredentialType {
 			type: 'string',
 			default: '',
 			required: true,
-			placeholder: 'https://qui.example.xyz',
+			placeholder: 'https://qui.example.tld',
 			description: 'The base URL of your QUI instance (without /api/)',
 		},
 		{
@@ -45,8 +45,7 @@ export class QuiApi implements ICredentialType {
 
 	test: ICredentialTestRequest = {
 		request: {
-			baseURL: '={{$credentials.baseUrl.replace(/\\/$/, "")}}/api/',
-			url: 'auth/me',
+			baseURL: '={{$credentials.baseUrl.replace(/\\/$/, "")}}',
 			method: 'GET',
 		},
 	};

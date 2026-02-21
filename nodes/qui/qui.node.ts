@@ -1,3 +1,8 @@
+/* eslint-disable n8n-nodes-base/node-param-options-type-unsorted-items */
+/* eslint-disable n8n-nodes-base/node-param-description-boolean-without-whether */
+/* eslint-disable n8n-nodes-base/node-param-resource-with-plural-option */
+/* eslint-disable n8n-nodes-base/node-param-description-wrong-for-limit */
+/* eslint-disable n8n-nodes-base/node-param-description-identical-to-display-name */
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
@@ -278,25 +283,25 @@ export class Qui implements INodeType {
 					{
 						name: 'Download Backup Archive',
 						value: 'downloadBackupArchive',
-						description: 'Download the backup archive for the specified backup run in the requested format.',
+						description: 'Download the backup archive for the specified backup run in the requested format',
 						action: 'Download backup archive',
 					},
 					{
 						name: 'Download Torrent File From Backup',
 						value: 'downloadTorrentFileFromBackup',
-						description: 'Download a specific torrent file from the backup archive.',
+						description: 'Download a specific torrent file from the backup archive',
 						action: 'Download torrent file from backup',
 					},
 					{
 						name: 'Execute Restore',
 						value: 'executeRestore',
-						description: 'Execute the restore plan for the specified backup run.',
+						description: 'Execute the restore plan for the specified backup run',
 						action: 'Execute restore',
 					},
 					{
 						name: 'Preview Restore Plan',
 						value: 'previewRestorePlan',
-						description: 'Build a restore plan for the specified backup run without applying any changes.',
+						description: 'Build a restore plan for the specified backup run without applying any changes',
 						action: 'Preview restore plan',
 					},
 				],
@@ -391,13 +396,13 @@ export class Qui implements INodeType {
 					},
 					{
 						name: 'Get per-Instance Completion Settings',
-						value: 'getPerinstanceCompletionSettings',
+						value: 'getPerInstanceCompletionSettings',
 						description: 'Returns the cross-seed completion settings for a specific qBittorrent instance. These settings control automatic cross-seed searches when torrents complete on this instance.',
 						action: 'Get per instance completion settings',
 					},
 					{
 						name: 'Update per-Instance Completion Settings',
-						value: 'updatePerinstanceCompletionSettings',
+						value: 'updatePerInstanceCompletionSettings',
 						description: 'Updates the cross-seed completion settings for a specific qBittorrent instance. These settings control automatic cross-seed searches when torrents complete on this instance.',
 						action: 'Update per instance completion settings',
 					},
@@ -410,7 +415,7 @@ export class Qui implements INodeType {
 					{
 						name: 'Cancel RSS Automation Run',
 						value: 'cancelRssAutomationRun',
-						description: 'Stops the currently running RSS automation run, if any.',
+						description: 'Stops the currently running RSS automation run, if any',
 						action: 'Cancel rss automation run',
 					},
 					{
@@ -440,13 +445,13 @@ export class Qui implements INodeType {
 					{
 						name: 'Get Seeded Torrent Search Settings',
 						value: 'getSeededTorrentSearchSettings',
-						description: 'Returns the persisted defaults used by Seeded Torrent Search runs.',
+						description: 'Returns the persisted defaults used by Seeded Torrent Search runs',
 						action: 'Get seeded torrent search settings',
 					},
 					{
 						name: 'Update Seeded Torrent Search Settings',
 						value: 'updateSeededTorrentSearchSettings',
-						description: 'Persists default filters and timing for Seeded Torrent Search runs.',
+						description: 'Persists default filters and timing for Seeded Torrent Search runs',
 						action: 'Update seeded torrent search settings',
 					},
 					{
@@ -648,7 +653,7 @@ export class Qui implements INodeType {
 					{
 						name: 'Execute External Program',
 						value: 'executeExternalProgram',
-						description: 'Execute an external program for one or more torrents.',
+						description: 'Execute an external program for one or more torrents',
 						action: 'Execute external program',
 					},
 					{
@@ -728,13 +733,13 @@ export class Qui implements INodeType {
 					{
 						name: 'Get Instance Capabilities',
 						value: 'getInstanceCapabilities',
-						description: 'Retrieve lightweight capability metadata for a qBittorrent instance.',
+						description: 'Retrieve lightweight capability metadata for a qBittorrent instance',
 						action: 'Get instance capabilities',
 					},
 					{
 						name: 'Get Directory Contents',
 						value: 'getDirectoryContents',
-						description: 'Retrieve directory contents from the qBittorrent host filesystem for path autocomplete.',
+						description: 'Retrieve directory contents from the qBittorrent host filesystem for path autocomplete',
 						action: 'Get directory contents',
 					},
 					{
@@ -752,13 +757,13 @@ export class Qui implements INodeType {
 					{
 						name: 'Get Recent Tracker Reannounce Activity',
 						value: 'getRecentTrackerReannounceActivity',
-						description: 'Return the most recent tracker reannounce events for an instance.',
+						description: 'Return the most recent tracker reannounce events for an instance',
 						action: 'Get recent tracker reannounce activity',
 					},
 					{
 						name: 'Get Current Tracker Reannounce Candidates',
 						value: 'getCurrentTrackerReannounceCandidates',
-						description: 'Return torrents that currently fall within the reannounce monitoring scope and have problematic or pending trackers.',
+						description: 'Return torrents that currently fall within the reannounce monitoring scope and have problematic or pending trackers',
 						action: 'Get current tracker reannounce candidates',
 					},
 					{
@@ -1100,7 +1105,7 @@ export class Qui implements INodeType {
 					{
 						name: 'Update Torrent File Priorities',
 						value: 'updateTorrentFilePriorities',
-						description: 'Adjust the download priority (including do-not-download) for one or more files in a torrent.',
+						description: 'Adjust the download priority (including do-not-download) for one or more files in a torrent',
 						action: 'Update torrent file priorities',
 					},
 					{
@@ -1112,7 +1117,7 @@ export class Qui implements INodeType {
 					{
 						name: 'Get Torrent Piece States',
 						value: 'getTorrentPieceStates',
-						description: 'Get download state of each piece for a torrent.',
+						description: 'Get download state of each piece for a torrent',
 						action: 'Get torrent piece states',
 					},
 					{
@@ -1192,7 +1197,7 @@ export class Qui implements INodeType {
 					{
 						name: 'Get Active Torrent Creation Task Count',
 						value: 'getActiveTorrentCreationTaskCount',
-						description: 'Get the number of active (running or queued) torrent creation tasks.',
+						description: 'Get the number of active (running or queued) torrent creation tasks',
 						action: 'Get active torrent creation task count',
 					},
 					{
@@ -1607,6 +1612,7 @@ export class Qui implements INodeType {
 				displayName: 'Current Password',
 				name: 'currentPassword',
 				type: 'string',
+				typeOptions: { password: true },
 				required: true,
 				default: '',
 				displayOptions: {
@@ -1621,6 +1627,7 @@ export class Qui implements INodeType {
 				displayName: 'New Password',
 				name: 'newPassword',
 				type: 'string',
+				typeOptions: { password: true },
 				required: true,
 				default: '',
 				displayOptions: {
@@ -1635,6 +1642,7 @@ export class Qui implements INodeType {
 				displayName: 'Password',
 				name: 'password',
 				type: 'string',
+				typeOptions: { password: true },
 				required: true,
 				default: '',
 				displayOptions: {
@@ -1662,6 +1670,7 @@ export class Qui implements INodeType {
 				displayName: 'Password',
 				name: 'password',
 				type: 'string',
+				typeOptions: { password: true },
 				required: true,
 				default: '',
 				displayOptions: {
@@ -1690,7 +1699,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['backups'],
@@ -1717,7 +1726,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['backups'],
@@ -1758,7 +1767,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['backups'],
@@ -1800,7 +1809,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['backups'],
@@ -1834,7 +1843,7 @@ export class Qui implements INodeType {
 						operation: ['executeRestore'],
 					},
 				},
-				description: 'Automatically resume torrents once qBittorrent reports them as fully verified. Defaults to true when skip recheck is enabled.',
+				description: 'Whether to automatically resume torrents once qBittorrent reports them as fully verified. Defaults to true when skip recheck is enabled.',
 			},
 			{
 				displayName: 'Dry Run',
@@ -1847,7 +1856,7 @@ export class Qui implements INodeType {
 						operation: ['executeRestore'],
 					},
 				},
-				description: 'When true, no changes are applied and the plan is returned.',
+				description: 'When true, no changes are applied and the plan is returned',
 			},
 			{
 				displayName: 'Exclude Hashes',
@@ -1860,7 +1869,7 @@ export class Qui implements INodeType {
 						operation: ['executeRestore'],
 					},
 				},
-				description: 'Torrent hashes to exclude from the restore plan and execution.',
+				description: 'Torrent hashes to exclude from the restore plan and execution',
 			},
 			{
 				displayName: 'Mode',
@@ -1907,7 +1916,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['backups'],
@@ -1954,7 +1963,7 @@ export class Qui implements INodeType {
 						operation: ['previewRestorePlan'],
 					},
 				},
-				description: 'Torrent hashes to exclude from the generated plan.',
+				description: 'Torrent hashes to exclude from the generated plan',
 			},
 			{
 				displayName: 'Mode',
@@ -2000,7 +2009,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['categories'],
@@ -2027,7 +2036,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['categories'],
@@ -2041,7 +2050,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['categories'],
@@ -2080,7 +2089,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['categories'],
@@ -2159,6 +2168,7 @@ export class Qui implements INodeType {
 				displayName: 'API Key (Prefer X-API-Key Header; Query Supported for Autobrr).',
 				name: 'apikey',
 				type: 'string',
+				typeOptions: { password: true },
 				default: '',
 				displayOptions: {
 					show: {
@@ -2166,7 +2176,7 @@ export class Qui implements INodeType {
 						operation: ['addACrossseedTorrentProvidedByAutobrr'],
 					},
 				},
-				description: 'API key (prefer X-API-Key header; query supported for autobrr).',
+				description: 'API key (prefer X-API-Key header; query supported for autobrr)',
 			},
 			{
 				displayName: 'Category',
@@ -2271,28 +2281,28 @@ export class Qui implements INodeType {
 			},
 			{
 				displayName: 'qBittorrent Instance ID',
-				name: 'instanceId',
+				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['crossseed'],
-						operation: ['getPerinstanceCompletionSettings'],
+						operation: ['getPerInstanceCompletionSettings'],
 					},
 				},
 				description: 'QBittorrent instance ID',
 			},
 			{
 				displayName: 'qBittorrent Instance ID',
-				name: 'instanceId',
+				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['crossseed'],
-						operation: ['updatePerinstanceCompletionSettings'],
+						operation: ['updatePerInstanceCompletionSettings'],
 					},
 				},
 				description: 'QBittorrent instance ID',
@@ -2305,7 +2315,7 @@ export class Qui implements INodeType {
 				displayOptions: {
 					show: {
 						resource: ['crossseed'],
-						operation: ['updatePerinstanceCompletionSettings'],
+						operation: ['updatePerInstanceCompletionSettings'],
 					},
 				},
 				description: 'Only trigger for torrents in these categories (empty means all)',
@@ -2318,7 +2328,7 @@ export class Qui implements INodeType {
 				displayOptions: {
 					show: {
 						resource: ['crossseed'],
-						operation: ['updatePerinstanceCompletionSettings'],
+						operation: ['updatePerInstanceCompletionSettings'],
 					},
 				},
 				description: 'Whether automatic cross-seed search is enabled for this instance',
@@ -2331,7 +2341,7 @@ export class Qui implements INodeType {
 				displayOptions: {
 					show: {
 						resource: ['crossseed'],
-						operation: ['updatePerinstanceCompletionSettings'],
+						operation: ['updatePerInstanceCompletionSettings'],
 					},
 				},
 				description: 'Skip torrents in these categories',
@@ -2344,7 +2354,7 @@ export class Qui implements INodeType {
 				displayOptions: {
 					show: {
 						resource: ['crossseed'],
-						operation: ['updatePerinstanceCompletionSettings'],
+						operation: ['updatePerInstanceCompletionSettings'],
 					},
 				},
 				description: 'Skip torrents with any of these tags',
@@ -2357,7 +2367,7 @@ export class Qui implements INodeType {
 				displayOptions: {
 					show: {
 						resource: ['crossseed'],
-						operation: ['updatePerinstanceCompletionSettings'],
+						operation: ['updatePerInstanceCompletionSettings'],
 					},
 				},
 				description: 'Require at least one matching tag (empty means all)',
@@ -2378,7 +2388,10 @@ export class Qui implements INodeType {
 				displayName: 'Maximum Number of Runs to Return',
 				name: 'limit',
 				type: 'number',
-				default: 0,
+				typeOptions: {
+					minValue: 1,
+				},
+				default: 50,
 				displayOptions: {
 					show: {
 						resource: ['crossseed'],
@@ -2497,7 +2510,10 @@ export class Qui implements INodeType {
 				displayName: 'Maximum Number of Runs to Return',
 				name: 'limit',
 				type: 'number',
-				default: 25,
+				typeOptions: {
+					minValue: 1,
+				},
+				default: 50,
 				displayOptions: {
 					show: {
 						resource: ['crossseed'],
@@ -2622,7 +2638,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['crossseed'],
@@ -2650,7 +2666,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['crossseed'],
@@ -2728,7 +2744,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['crossseed'],
@@ -2756,7 +2772,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['crossseed'],
@@ -2797,7 +2813,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['crossseed'],
@@ -2836,7 +2852,11 @@ export class Qui implements INodeType {
 				displayName: 'Limit',
 				name: 'limit',
 				type: 'number',
-				default: 0,
+				typeOptions: {
+					minValue: 1,
+				},
+				description: 'Max number of results to return',
+				default: 50,
 				displayOptions: {
 					show: {
 						resource: ['crossseed'],
@@ -2860,6 +2880,7 @@ export class Qui implements INodeType {
 				displayName: 'API Key (Prefer X-API-Key Header; Query Supported for Autobrr Webhook).',
 				name: 'apikey',
 				type: 'string',
+				typeOptions: { password: true },
 				default: '',
 				displayOptions: {
 					show: {
@@ -2867,7 +2888,7 @@ export class Qui implements INodeType {
 						operation: ['checkIfAReleaseCanBeCrossseededAutobrrWebhook'],
 					},
 				},
-				description: 'API key (prefer X-API-Key header; query supported for autobrr webhook).',
+				description: 'API key (prefer X-API-Key header; query supported for autobrr webhook)',
 			},
 			{
 				displayName: 'Find Individual Episodes',
@@ -2927,7 +2948,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['crossseed'],
@@ -3204,7 +3225,10 @@ export class Qui implements INodeType {
 				displayName: 'Maximum Number of Items to Return',
 				name: 'limit',
 				type: 'number',
-				default: 0,
+				typeOptions: {
+					minValue: 1,
+				},
+				default: 50,
 				displayOptions: {
 					show: {
 						resource: ['dirScan'],
@@ -3258,7 +3282,10 @@ export class Qui implements INodeType {
 				displayName: 'Maximum Number of Runs to Return',
 				name: 'limit',
 				type: 'number',
-				default: 0,
+				typeOptions: {
+					minValue: 1,
+				},
+				default: 50,
 				displayOptions: {
 					show: {
 						resource: ['dirScan'],
@@ -3299,7 +3326,10 @@ export class Qui implements INodeType {
 				displayName: 'Maximum Number of Items to Return',
 				name: 'limit',
 				type: 'number',
-				default: 0,
+				typeOptions: {
+					minValue: 1,
+				},
+				default: 50,
 				displayOptions: {
 					show: {
 						resource: ['dirScan'],
@@ -3629,14 +3659,14 @@ export class Qui implements INodeType {
 						operation: ['reorderInstances'],
 					},
 				},
-				description: 'Instance IDs in the desired display order.',
+				description: 'Instance IDs in the desired display order',
 			},
 			{
 				displayName: 'qBittorrent Instance ID',
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['instances'],
@@ -3650,7 +3680,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['instances'],
@@ -3677,7 +3707,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['instances'],
@@ -3691,7 +3721,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['instances'],
@@ -3705,7 +3735,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['instances'],
@@ -3719,7 +3749,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['instances'],
@@ -3733,7 +3763,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['instances'],
@@ -3774,7 +3804,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['instances'],
@@ -3788,7 +3818,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['instances'],
@@ -3815,7 +3845,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['instances'],
@@ -3828,21 +3858,24 @@ export class Qui implements INodeType {
 				displayName: 'Optional Maximum Number of Events to Return.',
 				name: 'limit',
 				type: 'number',
-				default: 0,
+				typeOptions: {
+					minValue: 1,
+				},
+				default: 50,
 				displayOptions: {
 					show: {
 						resource: ['instances'],
 						operation: ['getRecentTrackerReannounceActivity'],
 					},
 				},
-				description: 'Optional maximum number of events to return.',
+				description: 'Optional maximum number of events to return',
 			},
 			{
 				displayName: 'qBittorrent Instance ID',
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['instances'],
@@ -3856,7 +3889,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['instances'],
@@ -3877,14 +3910,14 @@ export class Qui implements INodeType {
 						operation: ['updateInstanceStatus'],
 					},
 				},
-				description: 'Set to false to pause all automatic connections to the upstream qBittorrent instance.',
+				description: 'Set to false to pause all automatic connections to the upstream qBittorrent instance',
 			},
 			{
 				displayName: 'qBittorrent Instance ID',
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['instances'],
@@ -3937,7 +3970,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['orphanScan'],
@@ -3950,7 +3983,10 @@ export class Qui implements INodeType {
 				displayName: 'Maximum Number of Runs to Return',
 				name: 'limit',
 				type: 'number',
-				default: 10,
+				typeOptions: {
+					minValue: 1,
+				},
+				default: 50,
 				displayOptions: {
 					show: {
 						resource: ['orphanScan'],
@@ -3964,7 +4000,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['orphanScan'],
@@ -3992,7 +4028,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['orphanScan'],
@@ -4019,7 +4055,10 @@ export class Qui implements INodeType {
 				displayName: 'Maximum Number of Files to Return',
 				name: 'limit',
 				type: 'number',
-				default: 100,
+				typeOptions: {
+					minValue: 1,
+				},
+				default: 50,
 				displayOptions: {
 					show: {
 						resource: ['orphanScan'],
@@ -4046,7 +4085,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['orphanScan'],
@@ -4074,7 +4113,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['orphanScan'],
@@ -4088,7 +4127,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['orphanScan'],
@@ -4102,7 +4141,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['orphanScan'],
@@ -4188,7 +4227,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['rss'],
@@ -4229,7 +4268,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['rss'],
@@ -4270,7 +4309,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['rss'],
@@ -4312,7 +4351,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['rss'],
@@ -4340,7 +4379,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['rss'],
@@ -4368,7 +4407,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['rss'],
@@ -4395,7 +4434,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['rss'],
@@ -4436,7 +4475,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['rss'],
@@ -4464,7 +4503,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['rss'],
@@ -4478,7 +4517,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['rss'],
@@ -4519,7 +4558,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['rss'],
@@ -4533,7 +4572,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['rss'],
@@ -4561,7 +4600,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['rss'],
@@ -4589,7 +4628,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['rss'],
@@ -4697,7 +4736,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['tags'],
@@ -4724,7 +4763,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['tags'],
@@ -4738,7 +4777,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['tags'],
@@ -4765,7 +4804,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrentDetails'],
@@ -4793,7 +4832,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrentDetails'],
@@ -4827,14 +4866,14 @@ export class Qui implements INodeType {
 						operation: ['getTorrentFiles'],
 					},
 				},
-				description: 'Force refresh from qBittorrent instead of serving cached file metadata.',
+				description: 'Force refresh from qBittorrent instead of serving cached file metadata',
 			},
 			{
 				displayName: 'qBittorrent Instance ID',
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrentDetails'],
@@ -4869,7 +4908,7 @@ export class Qui implements INodeType {
 						operation: ['updateTorrentFilePriorities'],
 					},
 				},
-				description: 'File indices to update.',
+				description: 'File indices to update',
 			},
 			{
 				displayName: 'Priority',
@@ -4883,14 +4922,14 @@ export class Qui implements INodeType {
 						operation: ['updateTorrentFilePriorities'],
 					},
 				},
-				description: 'Desired priority value (0-7, where 0 marks files as do-not-download).',
+				description: 'Desired priority value (0-7, where 0 marks files as do-not-download)',
 			},
 			{
 				displayName: 'qBittorrent Instance ID',
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrentDetails'],
@@ -4918,7 +4957,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrentDetails'],
@@ -4946,7 +4985,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrentDetails'],
@@ -4974,7 +5013,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrentDetails'],
@@ -5016,7 +5055,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrentDetails'],
@@ -5072,7 +5111,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrentDetails'],
@@ -5128,7 +5167,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrentDetails'],
@@ -5170,7 +5209,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrentDetails'],
@@ -5198,7 +5237,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrentDetails'],
@@ -5240,7 +5279,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrentDetails'],
@@ -5296,7 +5335,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrentDetails'],
@@ -5324,7 +5363,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrents'],
@@ -5351,7 +5390,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrents'],
@@ -5365,7 +5404,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrents'],
@@ -5392,7 +5431,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrents'],
@@ -5420,7 +5459,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrents'],
@@ -5448,7 +5487,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrents'],
@@ -5473,7 +5512,11 @@ export class Qui implements INodeType {
 				displayName: 'Limit',
 				name: 'limit',
 				type: 'number',
-				default: 500,
+				description: 'Max number of results to return',
+				typeOptions: {
+					minValue: 1,
+				},
+				default: 50,
 				displayOptions: {
 					show: {
 						resource: ['torrents'],
@@ -5534,7 +5577,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrents'],
@@ -5561,7 +5604,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrents'],
@@ -5603,7 +5646,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrents'],
@@ -5631,7 +5674,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrents'],
@@ -5658,7 +5701,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['torrents'],
@@ -5697,7 +5740,11 @@ export class Qui implements INodeType {
 				displayName: 'Limit',
 				name: 'limit',
 				type: 'number',
-				default: 500,
+				description: 'Max number of results to return',
+				typeOptions: {
+					minValue: 1,
+				},
+				default: 50,
 				displayOptions: {
 					show: {
 						resource: ['torrents'],
@@ -5759,7 +5806,7 @@ export class Qui implements INodeType {
 				name: 'instanceID',
 				type: 'number',
 				required: true,
-				default: 0,
+				default: 1,
 				displayOptions: {
 					show: {
 						resource: ['trackers'],
@@ -6026,12 +6073,12 @@ export class Qui implements INodeType {
 							torrentData: this.getNodeParameter('torrentData', i, '') as string,
 						};
 
-					} else if (operation === 'getPerinstanceCompletionSettings') {
+					} else if (operation === 'getPerInstanceCompletionSettings') {
 						const instanceId = this.getNodeParameter('instanceId', i) as number;
 						endpoint = 'cross-seed/completion/' + encodeURIComponent(instanceId);
 						method = 'GET';
 
-					} else if (operation === 'updatePerinstanceCompletionSettings') {
+					} else if (operation === 'updatePerInstanceCompletionSettings') {
 						const instanceId = this.getNodeParameter('instanceId', i) as number;
 						endpoint = 'cross-seed/completion/' + encodeURIComponent(instanceId);
 						method = 'PUT';
@@ -6964,3 +7011,6 @@ export class Qui implements INodeType {
 		return [returnData];
 	}
 }
+
+// n8n derives the export name from the filename (qui.node.js → 'qui')
+export { Qui as qui };
