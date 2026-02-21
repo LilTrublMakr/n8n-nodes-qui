@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-qui",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "n8n node to connect and use the QUI API",
 	"license": "MIT",
 	"homepage": "https://github.com/LilTrublMakr/n8n-nodes-qui",
